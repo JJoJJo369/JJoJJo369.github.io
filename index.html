@@ -2,32 +2,93 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="JJojio369의 GitHub 페이지입니다. 앱 개발 프로젝트와 유용한 정보를 공유합니다." />
-  <meta name="keywords" content="JJojio369, GitHub, 앱 개발, Flutter, Whisper, AI" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JJoJJo369 | 개발 메모 & 앱 프로젝트</title>
+
+  <!-- 기본 메타 -->
+  <meta name="description" content="JJoJJo369의 GitHub Pages입니다. Flutter, Whisper, VAD/노이즈 억제, Android NDK/JNI 연동 기록과 앱 출시 로그를 정리합니다. 빌드/광고(AdMob) 이슈 해결과 성능 튜닝 팁을 공유합니다." />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="JJojio369" />
-  
-  <!-- Open Graph tags (소셜 미디어 미리보기용) -->
-  <meta property="og:title" content="JJojio369의 GitHub 페이지" />
-  <meta property="og:description" content="GitHub에서 진행 중인 앱 개발 프로젝트와 유용한 정보를 공유하는 페이지입니다." />
-  <meta property="og:url" content="https://jjojjo369.github.io/" />
-  <meta property="og:image" content="https://jjojjo369.github.io/thumbnail.jpg" /> <!-- 대표 이미지 추가 필요 -->
-  
-  <title>JJojio369의 GitHub 페이지</title>
+  <link rel="canonical" href="https://JJoJJo369.github.io/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JJoJJo369" />
+  <meta property="og:title" content="JJoJJo369 | 개발 메모 & 앱 프로젝트" />
+  <meta property="og:description" content="Flutter·Whisper·VAD/NS·Android NDK/JNI 기록과 앱 출시 로그." />
+  <meta property="og:url" content="https://JJoJJo369.github.io/" />
+  <meta property="og:image" content="https://JJoJJo369.github.io/thumbnail.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JJoJJo369 | 개발 메모 & 앱 프로젝트" />
+  <meta name="twitter:description" content="Flutter·Whisper·VAD/NS·Android NDK/JNI 기록과 앱 출시 로그." />
+  <meta name="twitter:image" content="https://JJoJJo369.github.io/thumbnail.jpg" />
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JJoJJo369",
+    "url": "https://JJoJJo369.github.io/",
+    "description": "Flutter, Whisper, VAD/NS, Android NDK/JNI 연동 기록과 앱 출시 로그."
+  }
+  </script>
+
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;line-height:1.7;margin:0;color:#111}
+    header{padding:40px 20px;background:#fafafa;border-bottom:1px solid #eee}
+    main{max-width:880px;margin:0 auto;padding:28px 20px}
+    h1{margin:0 0 8px;font-size:28px}
+    h2{margin:28px 0 12px;font-size:22px}
+    p,li{font-size:16px}
+    .card{border:1px solid #eee;border-radius:12px;padding:16px;margin:12px 0;background:#fff}
+    img{max-width:100%;height:auto;border-radius:10px}
+    footer{border-top:1px solid #eee;padding:20px;color:#666;background:#fafafa}
+    a{color:#0057d9;text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>JJojio369의 웹사이트에 오신 것을 환영합니다!</h1>
-  <p>이곳에서는 제가 진행하는 다양한 프로젝트와 정보를 공유하고 있습니다.</p>
+  <header>
+    <h1>JJoJJo369 개발 페이지</h1>
+    <p>Flutter, Whisper, VAD/노이즈 억제, Android NDK/JNI 연동 등 실제 적용 기록을 간단명료하게 정리합니다.</p>
+  </header>
 
-  <h2>최근 업데이트</h2>
-  <ul>
-    <li>2025년 8월 4일 - GitHub Pages 사이트 개설 완료</li>
-    <li>추후 앱 개발 관련 자료 및 링크 공유 예정</li>
-  </ul>
+  <main>
+    <section class="card">
+      <h2>소개</h2>
+      <p>
+        이 사이트는 개인 앱 개발 과정에서 정리한 메모와 문제 해결 기록을 모아두는 공간입니다.
+        오프라인 구동을 목표로 하여 Whisper 기반 자막/음성 처리, Silero VAD, WebRTC Noise Suppression,
+        Flutter + JNI + NDK 연동 흐름 등을 기록합니다. 초기에는 페이지 수가 많지 않지만
+        실제 빌드와 배포 과정에서 발생한 시행착오를 꾸준히 보강할 예정입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>최근 업데이트</h2>
+      <ul>
+        <li>2025-08-04: GitHub Pages 개설 및 기본 구조 정리</li>
+        <li>2025-08-08: VAD/NS 파이프라인 정리(Flutter + JNI 구조)</li>
+        <li>2025-08-10: 색인 최적화(메타/OG, canonical, sitemap 반영)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>관련 링크</h2>
+      <ul>
+        <li><a href="https://github.com/JJoJJo369" rel="noopener">GitHub 프로필</a></li>
+        <li><a href="https://www.youtube.com/" rel="noopener">YouTube 채널</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>대표 이미지</h2>
+      <img src="thumbnail.jpg" alt="대표 이미지">
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 JJojio369. All rights reserved.</p>
+    <p>&copy; 2025 JJoJJo369. All rights reserved.</p>
   </footer>
 </body>
 </html>
